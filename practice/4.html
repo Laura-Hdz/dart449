@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DART 449 - Exercise 2</title>
+<link href="css/4.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+   <div id="container1">
+       <div class="shapes" onclick="change(this)"><img src="svgs/4-1.svg"> </div>
+       <div class="shapes" onclick="change(this)"><img src="svgs/4-2.svg"> </div>
+       <div class="shapes" onclick="change(this)"><img src="svgs/4-3.svg"> </div>
+    </div>
+    
+    <div id="text"><h1><a href="../html/practice.html">Go Back!</a></h1></div>
+
+<script>
+    function change(x) {
+        x.classList.toggle("new");        
+    }
+    
+</script>
+</body>

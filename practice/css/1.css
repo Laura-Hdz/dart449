@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*this only affects padding and border; meaning when adding padding it will add inside of the box and not increase the width; BUT it will increase the width when using margin*/
+}
+
+html, body{
+	height: 100%;
+} 
+
+.wrapper {
+	background: rgba(222,222,222,1.00);
+}
+
+.section1 {
+	height: 100%;
+	background: rgba(225,143,144,1.00);
+	display: flex;
+}
+
+.header {
+	background: rgba(228,228,228,1.00);
+	display: block;
+	margin: auto;	
+	padding: 10px;
+}
+
+.section2 {
+	background:rgba(127,181,229,1.00);
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 100%;
+	padding: 10px;
+}
+
+.aside {
+	background: rgba(200,171,236,1.00);
+	padding: 10px;
+	width: 100%;
+}
+
+.article {order: 1;}
+.as1 {order: 2;}	
+.as2 {order: 3;
+	margin-top: 10px;}
+
+.article {
+	margin: 10px 0;
+	padding: 10px;
+	background: rgba(225,225,225,1.00);
+}
+
+.section3 {
+	background:rgba(238,182,126,1.00);
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 100%;
+	padding: 10px;
+	justify-content: space-around;
+}
+
+.item {
+	background: rgba(200,171,236,1.00);
+	flex: 1 100%;
+	height: 300px;
+	margin: 5px 0;
+	padding: 10px;
+}
+
+.footer {
+	padding: 10px; 
+}
+
+/** TYPE **/
+
+.header, .section3 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 24pt;
+	font-weight: 800;
+	text-align: center;
+}
+
+.header a {
+    font-size: 20px;
+    text-decoration:line-through;
+    color: black;
+}
+
+.article, .aside h1 {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 18pt;
+	font-weight: 800;
+}
+.article, .aside p {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 12pt;
+	font-weight: 400;
+}
+
+.article p {
+	margin-top: 5px;
+}
+
+.footer {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 18pt;
+	font-weight: 800;
+	text-align: center;
+}
+
+@media all and (min-width: 600px) {
+
+	.aside {
+	flex: 1 0px;
+	}
+	
+	.as1 {
+		margin-right: 5px;
+	}
+	
+	.as2 {
+		margin: 0 0 0 5px;
+	}
+	
+	.item {
+	flex: 1 40%;
+	margin: 0 5px 10px;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.aside {
+	flex: 1;
+	margin: 10px;
+	}
+	
+	.article {
+	flex: 1;
+	order: 2;
+	}
+	
+	.as1 {order: 1;}
+	.as2 {order: 2}	
+
+	.item {
+	flex: 1 20%;
+	margin: 0 5px 10px;
+	}
+}

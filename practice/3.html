@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DART 449 - Exercise 2</title>
+<link href="css/3.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+   <div id="container1">
+   <svg id="shape1" onclick="change()" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.17 14.17">
+   <title>shape1</title>
+   <circle class="shapes shape1" cx="7.08" cy="7.08" r="7.08"/></svg>
+
+    <svg id="shape2" onclick="back()" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.17 14.17">
+    <title>shape2</title>
+    <path class="shapes shape2" d="M7.08,0a7.09,7.09,0,1,0,7.09,7.09A7.08,7.08,0,0,0,7.08,0Zm0,12A4.9,4.9,0,1,1,12,7.09,4.89,4.89,0,0,1,7.08,12Z"/></svg>
+    </div>
+    
+    <div id="text">
+    <h1 id="txt">This is the thirth exercise!</h1>
+    <h2><a href="../html/practice.html">Go Back!</a></h2>
+    </div>
+
+<script>
+    function change() {
+            document.getElementById("txt").style.color='#FF00FF';
+            document.getElementById("txt").style.fontSize='50px';
+        }
+    
+    function back() {
+            document.getElementById("txt").style.color='#0000FF';
+            document.getElementById("txt").style.fontSize='30px';
+        }
+    
+</script>
+</body>

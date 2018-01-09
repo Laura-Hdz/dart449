@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DART 449 - Exercise 2</title>
+<link href="css/5.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+<div id="container" class="cont">   
+<div class="shapes shape1" onclick="inc()"><img src="svgs/5-1.svg"></div>	
+<div class="shapes shape2" onclick="dec()"><img src="svgs/5-2.svg"></div>
+<div class="shapes shape3" onclick="dec()"><img src="svgs/5-3.svg"></div>
+<div class="shapes shape4" onclick="inc()"><img src="svgs/5-4.svg"></div>	
+</div>
+
+<div id="yourTotal" class="text"></div>
+<div id="back" class="text"><a href="../html/practice.html">Go Back!</a></div>
+
+<script>
+	var total = 0;
+	var showPoints = document.getElementById("yourTotal");
+	showPoints.innerHTML = "Your points: " + total;
+	
+	function inc() {
+		total += 5; //inc by 5, total++ would inc by 1
+		showPoints.innerHTML = "Your points: " + total;
+		
+		if(total >= 100){
+		total = 100;
+		showPoints.innerHTML = "You win!";
+		showPoints.className = "win";
+        document.getElementById("container").className = "shp";}
+		}
+	
+	
+	function dec() {
+		total -= 5; 
+		if(total <= 0){
+		  total = 0;
+		}
+		showPoints.innerHTML = "Your points: " + total;
+		showPoints.className = "text"
+        document.getElementById("container").className = "cont";
+	}
+	
+</script>
+
+</body>

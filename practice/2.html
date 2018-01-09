@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DART 449 - Exercise 2</title>
+<link href="css/2.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+   <div id="container1">
+   <svg id="shape1" onclick="document.getElementById('txt').innerHTML = 'This is the second exercise'" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.51 7.51">
+   <title>shape1</title>
+   <path class="shapes shape1" d="M7.51,7.51H0V0H7.51ZM1.38,6.13H6.13V1.38H1.38Z"/></svg>
+
+    <svg id="shape2" onclick="document.getElementById('txt').innerHTML = 'Click the other shapes to clear me!'" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.51 7.51">
+    <title>shape2</title>
+    <path class="shapes shape2" d="M7.51,7.51H0V0H7.51Z"/></svg>
+    </div>
+    
+    <div id="container2">
+    <svg id="shape3" onclick="document.getElementById('txt').style.opacity = '0'" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.88 6.46">
+    <title>shape3</title>
+    <path class="shapes shape3" d="M6.88,0,3.45,6.46,0,0Zm-5,1.1L3.44,4.23,5,1.1Z"/></svg>
+    
+    <svg id="shape4" onclick="document.getElementById('txt').style.opacity = '1'" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.88 6.46">
+    <title>shape4</title>
+    <path class="shapes shape4" d="M3.45,0,6.88,6.46H0Z"/></svg>
+    </div>
+    
+    <div id="text">
+    <h1 id="txt">Hello!</h1>
+    <h2><a href="../html/practice.html">Go Back!</a></h2>
+    </div>
+</body>

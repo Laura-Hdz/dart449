@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700|Playfair+Display:400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*this only affects padding and border; meaning when adding padding it will add inside of the box and not increase the width; BUT it will increase the width when using margin*/
+    /*font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Playfair Display', serif;*/
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    background: linear-gradient(318deg, #ff0062, #0000ff);
+    background-size: 1000% 1000%;
+  
+    -webkit-animation: Coolgradient 12s linear infinite;
+    -moz-animation: Coolgradient 12s linear infinite;
+    -o-animation: Coolgradient 12s linear infinite;
+    animation: Coolgradient 12s linear infinite;
+}
+
+@-webkit-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-moz-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-o-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@keyframes Coolgradient { 
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+#home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.intro {
+    width: 70%;
+    height: 10%;
+    margin: 10% auto;
+    text-align: center;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: rgba(255,255,255,1);
+}
+
+.intro h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.intro p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.link {
+    display: block;
+    width: 60%;
+    height: auto;
+    padding: 10px 0;
+    margin: 5px 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(255,255,255,1);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    transition:font-size .2s ease 0s; 
+}
+
+.link:hover {
+    transition: font-size .2s ease 0s;
+    font-size: 20px;
+}
+
+@media all and (min-width: 1024px) { 
+    .link {
+    margin: 0 5px;
+    width: 10%;
+    }
+}
+
+#practice {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.exercises {
+    width: 70%;
+    height: 10%;
+    margin: 10% auto;
+    text-align: center;
+    align-items: center;
+    color: rgba(255,255,255,1);
+}
+
+.exercises h1 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.exercises p {
+    font-family: 'Playfair Display', serif;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.exercises a {
+    display: inline-block;
+    padding: 25px 0;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: rgba(255,255,255,1);
+    transition:font-size .2s ease 0s; 
+}
+
+.exercises a:hover {
+    transition: font-size .2s ease 0s;
+    font-size: 25px;
+}
+
+
